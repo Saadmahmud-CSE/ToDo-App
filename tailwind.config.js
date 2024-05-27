@@ -4,12 +4,5 @@ export default {
     "./*.html",
     "./src/**/*.{js}",
   ],
-  theme: {
-    extend: {},
-    fontFamily: {
-      poetsen_one:["Poetsen One"],
-      roboto:["Roboto"],
-    },
-  },
   plugins: [],
 }

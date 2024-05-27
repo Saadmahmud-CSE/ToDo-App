@@ -1,3 +1,5 @@
+import "./style.css";
+
 const baseUrl = "https://todo-crudl.deno.dev";
 const $ = document.querySelector.bind(document);
 
@@ -84,7 +86,7 @@ function createTaskElement(todo) {
           <input type="checkbox" class="mr-2" ${todo.status === 'completed' ? 'checked' : ''}>
           <span>${todo.title}</span>
       </div>
-      <button class="delete-btn text-gray-500 hover:bg-red-400">X</button>
+      <button class="delete-btn text-gray-500 hover:bg-red-400 w-10 h-10">x</button>
   `;
 
   const checkbox = div.querySelector('input[type="checkbox"]');
