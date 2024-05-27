@@ -114,7 +114,7 @@ async function updateTodoStatus(id, status) {
     const url = `${baseUrl}/${userId}/todos/${id}`;
     try {
         await fetch(url, {
-            method: "PATCH",
+            method: "PUT",
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ status })
         });
