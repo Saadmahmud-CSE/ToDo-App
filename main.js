@@ -83,7 +83,7 @@ function createTaskElement(todo) {
   div.className = 'flex justify-between items-center p-2 bg-white shadow rounded my-2';
   div.innerHTML = `
       <div class="flex items-center">
-          <input type="checkbox" class="mr-2" ${todo.status === 'completed' ? 'checked' : ''}>
+          <input type="checkbox" class="mr-2">
           <span>${todo.title}</span>
       </div>
       <button class="delete-btn text-gray-500 hover:bg-red-400 w-10 h-10">x</button>
